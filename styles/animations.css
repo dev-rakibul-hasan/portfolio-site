@@ -1,0 +1,27 @@
+.float-loop {
+  animation: floatLoop 6s ease-in-out infinite;
+}
+
+.pulse-line {
+  animation: pulseLine 1.8s ease-in-out infinite;
+}
+
+@keyframes floatLoop {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulseLine {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+}
